@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --texto-titulo: #FFFFFF;
+    --texto-secundario: #c0c0c0;
+    --cor-fundo: #00030C;
+    --botao-azul: #167BF7;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+header {
+    background-image: url(/Front_end\ praticando/image/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    align-items: center;
+
+}
+
+.compra {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+}
+
+.combo {
+    width: 500px;
+    padding-left: 20%;
+}
+
+.textheader {
+    color: var(--texto-titulo);
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    width: 588px;
+    height: 102px;
+    top: 125px;
+    padding-left: 20%;
+}
+
+.cabecalho {
+    display: grid;
+    grid: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+
+.botao1 {
+    padding: 16px;
+    border-radius: 8px;
+    gap: 16px;
+    background-color: var(--botao-azul);
+    color: var(--texto-titulo);
+    font-size: 26px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botao2 {
+    padding: 16px;
+    border-radius: 8px;
+    border-color: #FFFFFF;
+    border: 2px solid;
+    gap: 16px;
+    background-color: transparent;
+    color: var(--texto-titulo);
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+}
+
+.texto__secudario {
+    color: var(--texto-secundario);
+    text-align: center;
+}
+
+.container1 {
+    display: grid;
+    grid: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    top: 20px;
+    align-items: center;
+}
+
+.parte1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.parte1__titulo {
+    color: var(--texto-titulo);
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+}
+
+.texto_containers {
+    color: var(--texto-titulo);
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+}
+
+.parte1__imagem {
+    width: 50%;
+    height: 700px;
+    padding-left: 20%;
+}
+
+.container2 {
+    display: grid;
+    grid: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding-top: 60px;
+    top: 20px;
+    align-items: center;
+}
+
+.parte2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.botao__combo {
+    padding: 16px;
+    border-radius: 8px;
+    gap: 16px;
+    background-color: var(--botao-azul);
+    color: var(--texto-titulo);
+    font-size: 26px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.parte2__imagem {
+    width: 60%;
+    height: 520px;
+    padding-left: 20%;
+}
+
+.container3 {
+    display: grid;
+    grid: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 200px;
+    top: 20px;
+    align-items: center;
+}
+
+.parte3__titulo {
+    color: var(--texto-titulo);
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+}
+
+.parte3__imagem {
+    height: 340px;
+    left: 100px;
+
+}
+
+.dispositivos__titulo {
+    color: var(--texto-titulo);
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+}
+
+.dispositivos__listas {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    margin-top: 50px;
+    text-align: center;
+    color: var(--texto-titulo);
+}
+
+.lista__item {
+    font-size: 28px;
+    color: var(--texto-titulo);
+}
+
+.rodape {
+    color: var(--texto-titulo);
+    text-align: center;
+    margin: 1em 0;
+    text-decoration: none;
+}
+
+.lista__rodape {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color: var(--texto-titulo);
+}
+
+.rodape_texto {
+    color: var(--texto-secundario);
+}
+
+.logoplus {
+    margin: 10px;
+}
+
+.fieldset_rodape {
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+    }
+    
+    .combo {
+        width: 20rem;
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    
+    .compra {
+        margin: 2em auto; /* Centraliza horizontalmente */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .textheader {
+        text-align: center;
+    }
+    .div_pai {
+        display: block;
+        justify-content: center; /* Centraliza horizontalmente */
+        padding-left: 16%;
+     
+    }
+    
+    .botões {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        gap: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    .container1 {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    .parte1__imagem {
+        width: 25rem;
+        padding: 10px;
+    }
+
+    .parte1__titulo {
+        text-align: center;
+    }
+
+    .texto_containers {
+        text-align: center;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .parte2__imagem {
+        width: 20rem;
+        display: flex;
+        padding: 10px;
+    }
+
+    .parte2__titulo {
+        text-align: center;
+    }
+
+    .container3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .parte3__imagem {
+        width: 400px; /* Largura desejada */
+        margin-left: -15%; /* Desloca a imagem para a direita */
+        padding: 10px;
+        margin-top: 10px; /* Adiciona um espaço entre a imagem e o texto */
+    }
+
+    .parte3__titulo {
+        text-align: center;
+    }
+
+    .parte3__texto {
+        color: var(--texto-titulo);
+        font-family: "Inter", sans-serif;
+        text-align: justify;
+        flex-grow: 1; /* Ocupa todo o espaço disponível */
+        padding: 0 20px; /* Adiciona um espaçamento lateral */
+    }
+
+
+    .dispositivos{
+        display: block;
+        margin-left: 10%;
+    }
+    .dispositivos__titulo{
+        padding-left: 5%;
+    }
+    .dispositivos__listas{
+        display: block;
+        align-items: center;
+        padding-right: 25%;
+    }
+    .image_lista {
+        display: flex;
+        margin-left: -28%; /* Move os ícones um pouco para a esquerda */
+    }
+    .fieldset_rodape{
+        border: none;
+    }
+
+    .lista__rodape{
+        display: block;
+        
+    }
+    .logoplus {
+        margin: 10px;
+        padding-left: 5%
+
+    }
+}

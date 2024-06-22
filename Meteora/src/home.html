@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteora</title>
+    <link rel="stylesheet" href="/Meteora/src/styleHome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </header>
+
+<body>
+    <!-- Menu hamburguer e header da pagina com carrosel -->
+    <header class="header">
+        <img src="/Meteora/img/logo_meteora.png" alt="logo_meteora">
+        <nav id="nav">
+            <ul id="lista">
+                <li><a href="" id="links">Home</a></li>
+                <li><a href="" id="links">Nossas lojas</a></li>
+                <li><a href="" id="links">Novidades</a></li>
+                <li><a href="" id="links">Promoções</a></li>
+            </ul>
+        </nav>
+        <div class="pesquisa">
+            <input type="text" name="buscar" id="input-busca" placeholder="Pesquise o produto">
+            <button id="button-busca">Buscar</button>
+            <button id="btn-menu"></button>
+        </div>
+    </header>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Meteora/img/Banner carousel 1 _ 1440.png" class="d-block w-100" alt="" id="banner1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Meteora/img/Banner carousel 2 _ 1440.png" class="d-block w-100" alt="" id="banner">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Meteora/img/Banner carousel 3 _ 1440.png" class="d-block w-100" alt="" id="banner">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Código da busca por categorias -->
+        <div class="busca_categoria">
+            <h2>
+                Busque por categoria:
+            </h2>
+        </div>
+        <div class="busca_icone">
+            <div class="div_imgCategoria">
+                <figure>
+                    <img class="imagens_Categorias" src="/Meteora/img/Categoria camiseta.png" alt="Camiseta">
+                    <figcaption>Camiseta</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagens_Categorias" src="/Meteora/img/Categoria Bolsa.png" alt="Bolsa">
+                    <figcaption>Bolsa</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagens_Categorias" src="/Meteora/img/Categoria Calçados.png" alt="Calçados">
+                    <figcaption>Calcados</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagens_Categorias" src="/Meteora/img/Categoria Calca.png" alt="Calças">
+                    <figcaption>Calças</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagens_Categorias" src="/Meteora/img/Categoria Casaco.png" alt="Casacos">
+                    <figcaption>Casacos</figcaption>
+                </figure>
+                <figure>
+                    <img class="imagens_Categorias" src="/Meteora/img/Categoria acessorio.png" alt="Acessorio">
+                    <figcaption>Acessório</figcaption>
+                </figure>
+            </div>
+        </div>
+        <!-- Código dos cards -->
+        <h2 id="title">Produtos que estão bombando</h2>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div id="card__anuncio" class="col-md-4 mb-4">
+                        <div class="card" style="width: 18rem;" id="card1">
+                            <img src="/Meteora/img/card1.png" class="card-img-top" alt="card1_camiseta">
+                            <div class="card-body">
+                                <h5 class="card-title">Camiseta Conforto</h5>
+                                <p class="card-text">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o
+                                    verão.
+                                    Modelagem unissex.</p>
+                                <p>R$ 79,00</p>
+                                <a href="card1.js" class="btn btn-primary">Comprar</a>
+                                <br><br>
+                                <a href="card1.js" class="btn btn-primary">Adicionar no carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="card__anuncio" class="col-md-4 mb-4">
+                        <div class="card" style="width: 18rem;" id="card2">
+                            <img src="/Meteora/img/card2.png" class="card-img-top" alt="card2_calça">
+                            <div class="card-body">
+                                <h5 class="card-title">Calça Alfaiataria</h5>
+                                <p class="card-text">Modelo Wide Leg alfaiataria em linhas de algodão. Uma peça
+                                    confortável e única pra vida toda!</p>
+                                <p>R$ 179,00</p>
+                                <a href="card2.js" class="btn btn-primary">Comprar</a>
+                                <br><br>
+                                <a href="card2.js" class="btn btn-primary">Adicionar no carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card__anuncio" class="col-md-4 mb-4">
+                        <div class="card" style="width: 18rem;" id="card3">
+                            <img src="/Meteora/img/card3.png" class="card-img-top" alt="card3_tênis">
+                            <div class="card-body">
+                                <h5 class="card-title">Tênis Chunky</h5>
+                                <p class="card-text">Snicker casual com solado mais alto e modelagem robusta. Modelo
+                                    unissex.</p>
+                                <p>R$ 250,00</p>
+                                <a href="card3.js" class="btn btn-primary">Comprar</a>
+                                <br><br>
+                                <a href="card3.js" class="btn btn-primary">Adicionar no carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card__anuncio" class="col-md-4 mb-4">
+                        <div class="card" style="width: 18rem;" id="card4">
+                            <img src="/Meteora/img/card4.png" class="card-img-top" alt="card4_bolsa">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolsa Coringa</h5>
+                                <p class="card-text">Bolsa camel em couro sintético de alta duração. Ideal para
+                                    acompanhar você por uma vida!</p>
+                                <p>R$ 150,00</p>
+                                <a href="card4.js" class="btn btn-primary">Comprar</a>
+                                <br><br>
+                                <a href="card4.js" class="btn btn-primary">Adicionar no carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card__anuncio" class="col-md-4 mb-4">
+                        <div class="card" style="width: 18rem;" id="card5">
+                            <img src="/Meteora/img/card5.png" class="card-img-top" alt="card5_óculos">
+                            <div class="card-body">
+                                <h5 class="card-title">Óculos Redondo</h5>
+                                <p class="card-text">Armação metálica em grafite dourado com lentes arredondadas. Sem
+                                    erro!</p>
+                                <p>R$ 120,00</p>
+                                <a href="card5.js" class="btn btn-primary">Comprar</a>
+                                <br><br>
+                                <a href="card5.js" class="btn btn-primary">Adicionar no carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card__anuncio"  class="col-md-4 mb-4">
+                        <div class="card" style="width: 18rem;" id="card6">
+                            <img src="/Meteora/img/card6.png" class="card-img-top" alt="card6_jaqueta">
+                            <div class="card-body">
+                                <h5 class="card-title">Jaqueta Jeans</h5>
+                                <p class="card-text">Modelo unissex oversized com gola de camurça. Atemporal de cor azul
+                                    marinho claro e autêntica!</p>
+                                <p>R$ 120,00</p>
+                                <a href="card6.js" class="btn btn-primary">Comprar</a>
+                                <br><br>
+                                <a href="card6.js" class="btn btn-primary">Adicionar no carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Código do meio de pagemento e beneficios-->
+
+        <div class="beneficios__container">
+            <h2 id="title_beneficios">Conheça todas as nossas facilidades</h2>
+            <section>
+                <div id="pix">
+                    <img id="img_pix" src="/Meteora/img/x-diamond.png" alt="">
+                    <h5>PAGUE PELO PIX</h5>
+                    <p class="spacer"></p>
+                    <p>Ganhe 5% OFF em pagamentos via PIX</p>
+                </div>
+                <div id="pix">
+                    <img id="img_pix" src="/Meteora/img/arrow-repeat.png" alt="">
+                    <h5>TROCA GRÁTIS</h5>
+                    <p class="spacer"></p>
+                    <p>Fique livre para trocar em até 30 dias.</p>
+                </div>
+                <div id="pix">
+                    <img id="img_pix" src="/Meteora/img/flower1.png" alt="">
+                    <h5>PAGUE PELO PIX</h5>
+                    <p class="spacer"></p>
+                    <p>Ganhe 5% OFF em pagamentos via PIX</p>
+                </div>
+            </section>
+                
+    </main>
+    <!-- Código rodapé e-mail marketing-->
+    <footer>
+        <div class="div_footer">
+            <fieldset class="footer_fieldset">
+                <h3>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? </h3>
+                <h3>Cadastra-se</h3>
+                <div id="form_input">
+                    <input type="text" id="input_email" placeholder="Digite seu email">
+                    <button id="btn_email_mkt">Enviar</button>
+                </div>
+                
+            </fieldset>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/Meteora/src/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

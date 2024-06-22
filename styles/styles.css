@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor--principal:black;
+    --cor--secundaria:white;
+    --cor--terciaria:#22D4FD;
+    --cor--hover: #272727;
+    --fonte-principal: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--cor--principal);
+    color: var(--cor--secundaria);
+    font-family: 'Times New Roman', Times, serif;
+}
+.title{
+    text-align: center;
+    color: var(--cor--terciaria);
+    font-family: 'Krona One', sans-serif;
+    font-size: 2.25rem;
+}
+.cabecalho{
+    padding: 2% 0% 0% 14%;
+    text-align: center;
+
+}
+.cabecalho_menu{
+    display: flex;
+    text-align: center;
+    gap: 90px;
+}
+.cabecalho_link{
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--cor--terciaria);
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 14%;
+    align-items: center;
+}
+.image{
+    width: 35%;
+    border-radius: 3px;
+
+}
+.conteudo{
+    width: 50%;
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.texto_conteudo{
+    text-align: justify;
+}
+.botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.links{
+    color: var(--cor--secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 22px 0px;
+    text-decoration: none;
+    border: 2px solid var(--cor--terciaria);
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    align-items: center;
+}
+
+.links:hover{
+    background-color:var(--cor--hover);
+}
+
+.rodape{
+   margin-top: 15vh;
+   color: var(--cor--secundaria);
+   background-color: var(--cor--terciaria);
+   padding: 18px;
+   text-align: center;
+   font-family: var(--fonte-principal);
+   font-size: 1rem;
+   border-radius: 5px;
+}
+p{
+    font-size: larger;
+}
+
+@media (max-width:1000px){
+    
+    .cabecalho{
+        padding: 4%;
+
+    }
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    
+    .conteudo{
+        padding: 5%;
+        width: auto;
+    }
+    
+    .container{
+        flex-direction: column-reverse;
+        padding: 4% 5%;
+    }
+
+
+}
