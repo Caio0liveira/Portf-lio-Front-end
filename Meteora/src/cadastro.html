@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Meteora</title>
+    <link rel="stylesheet" href="./styleCadastro.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Cadastro Meteora</h1>
+    
+            <form action="#" data-formulario>
+                <div class="campo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Fulano de tal de Oliveira" minlength="3" required>
+                    <span class="mensagem-erro"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required/>
+                    <span class="mensagem-erro"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="rg">RG</label>
+                    <input type="text" id="RG" name="RG" placeholder="0000000-00" required>
+                    <span class="mensagem-erro"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" placeholder=" ex: Rua Antônio Fagundes" required>
+                    <span class="mensagem-erro"></span>
+                </div>
+    
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com.br" minlength="4" required>
+                    <span class="mensagem-erro"></span>
+                </div>
+
+                <div class="campo">
+                    <label for="dtNascimento">Data de nascimento</label>
+                    <input type="date" id="dtNascimento" name="dtNascimento"  required>
+                    <span class="mensagem-erro"></span>
+                </div>
+    
+                <div class="campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <span class="mensagem-erro"></span>
+                </div>
+    
+                <div class="campo">
+                    <label for="confirmarSenha">Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+                    <span class="mensagem-erro"></span>
+                </div>
+
+                <div class="campo-aceite">
+                    <input type="checkbox" id="aceiteTermos" name="aceiteTermos" required>
+                    <label for="aceiteTermos">Li e concordo com os Termos de Uso Política de Privacidade das lojas Meteora</label>
+                    <span class="mensagem-erro"></span>
+                </div>
+    
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <script src="/src/js/scriptCadastro.js" type="module"></script>
+</body>
+</html>
