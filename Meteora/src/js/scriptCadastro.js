@@ -7,7 +7,7 @@ const camposFormularios = document.querySelectorAll("[required]")
 const formulario = document.querySelector("[data-formulario]")
 
 
-
+// Pegando os valores capturados no formulario e armazenando de forma web
 formulario.addEventListener('submit', (e) =>{
     e.preventDefault()
     const listaRespostas = {
@@ -45,7 +45,7 @@ const mensagens = {
         patternMismatch: "Por favor, preencha um nome válido.",
         tooShort: "Por favor, preencha um nome válido."
     },
-    email: {
+    Email: {
         valueMissing: "O campo de e-mail não pode estar vazio.",
         typeMismatch: "Por favor, preencha um email válido.",
         tooShort: "Por favor, preencha um e-mail válido."
@@ -70,6 +70,8 @@ const mensagens = {
     }
 }
 
+
+//Function principal para validação de cada campo
 
 function verificarCampo(campo) {
 

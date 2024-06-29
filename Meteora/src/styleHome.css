@@ -134,9 +134,10 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
-    margin: 5px 40px;
-    padding: 20px;
-    align-items: center;
+    margin: 15px 30px;
+    padding: 10px;
+    align-items: justify;
+    right: 101px;
 }
 
 .cards {
@@ -153,7 +154,7 @@ a:hover {
 }
 #title_beneficios{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
     color: white;
     padding: 1rem;
 }
@@ -163,11 +164,19 @@ a:hover {
     justify-content: center;
     padding: 1rem;
 }
+
+#texto_beneficio{
+    color: white;
+    display: block;
+    margin-top: 85px;
+    padding-left: 42px;
+    text-align: justify;
+}
+
 section{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px;
 }
 section h5{
     margin-left: 1rem;
@@ -175,7 +184,9 @@ section h5{
 section p{
     margin-top: 3.5rem;
     display: flex;
-    margin-left: -14.1%;
+    padding-right: 50px;
+    left: -50px;
+    
 }
 .div_footer{
     padding: 8rem;
@@ -185,8 +196,7 @@ section p{
     border-radius: 5px;
 }
 #input_email{
-    display: flex;
-    align-items: center;
+    margin-left: 17%
 }
 #btn_email_mkt{
     display: flex;
@@ -219,6 +229,55 @@ fieldset input{
     padding-top: 25px;
 
 }
+
+/*  CSS MODAL */
+
+#Title_modal_produto{
+    background-color:rgba(0, 0, 0, 1) ;
+    color:rgba(255, 255, 255, 1) ;
+}
+#Title_modal_produto h5{
+    margin-left: 20px;
+}
+#caracteristica h4:hover{
+    color: black;
+}
+#preco_produto{
+    font-size: 21px;
+}
+#fornecedor{
+    color: rgba(173, 181, 189, 1);
+}
+
+#img_modal {
+    max-width: 100%;
+    height: auto;
+}
+#caracteristica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#linha_modal {
+    border-bottom: 2px solid #ccc;
+    margin: 10px 0;
+    color: black;
+}
+#cores_produto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#tamanho_produto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
 
 @media (max-width:1000px) {
     img {
@@ -343,6 +402,10 @@ fieldset input{
     }
     #btn_email_mkt{
         margin: 10px
+    }
+    #img_modal_check{
+        height: 2rem;
+        width: 2rem;
     }
 }
 @media (max-width:800px) {
