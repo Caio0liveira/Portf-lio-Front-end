@@ -98,6 +98,13 @@ a:hover {
     margin: 0 5px;
     position: relative;
 }
+.div_imgCategoria button {
+    display: inline-block;
+    background-color: black;
+    width: 100%;
+    color: white;
+    position: relative;
+}
 
 .div_imgCategoria {
     display: flex;
@@ -245,6 +252,9 @@ fieldset h3 {
     width: 100%;
     max-width: 1000px;
 }
+
+
+
 
 /*  CSS MODAL */
 

@@ -72,42 +72,42 @@
             <div class="div_imgCategoria">
                 <figure>
                     <img class="imagens_Categorias" src="/Meteora/img/Categoria camiseta.png" alt="Camiseta">
-                    <figcaption>Camiseta</figcaption>
+                    <button id="btn_Camiseta">Camiseta</button>
                 </figure>
                 <figure>
                     <img class="imagens_Categorias" src="/Meteora/img/Categoria Bolsa.png" alt="Bolsa">
-                    <figcaption>Bolsa</figcaption>
+                    <button id="btn_Bolsa">Bolsa</button>
                 </figure>
                 <figure>
-                    <img class="imagens_Categorias" src="/Meteora/img/Categoria Calçados.png" alt="Calçados">
-                    <figcaption>Calcados</figcaption>
+                    <img class="imagens_Categorias" src="/Meteora/img/Categoria Calçados.png" alt="Calcados">
+                    <button id="btn_Calcados">Calcados</button>
                 </figure>
                 <figure>
-                    <img class="imagens_Categorias" src="/Meteora/img/Categoria Calca.png" alt="Calças">
-                    <figcaption>Calças</figcaption>
+                    <img class="imagens_Categorias" src="/Meteora/img/Categoria Calca.png" alt="Calcas">
+                    <button id="btn_calcas">Calças</button>
                 </figure>
                 <figure>
                     <img class="imagens_Categorias" src="/Meteora/img/Categoria Casaco.png" alt="Casacos">
-                    <figcaption>Casacos</figcaption>
+                    <button id="btn_Casacos">Casacos</button>
                 </figure>
                 <figure>
                     <img class="imagens_Categorias" src="/Meteora/img/Categoria acessorio.png" alt="Acessorio">
-                    <figcaption>Acessório</figcaption>
+                    <button id="btn_Acessorios">Acessórios</button>
                 </figure>
             </div>
         </div>
         <!-- Código dos cards -->
 
         <h2 id="title">Produtos que estão bombando</h2>
-        <div>
+        <div id="produtos">
             <!--Produto 1 -->
             <div class="container">
                 <div class="row">
-                    <div id="card__anuncio" class="col-md-4 mb-4">
+                    <div id="card__anuncio" class="col-md-4 mb-4" data-tipo="Camiseta">
                         <div class="card" style="width: 18rem;" id="card1">
                             <img src="/Meteora/img/card1.png" class="card-img-top" alt="card1_camiseta">
                             <div class="card-body">
-                                <h5 class="card-title">Camiseta Conforto</h5>
+                                <h5 class="card-title" id="Camiseta">Camiseta Conforto</h5>
                                 <p class="card-text">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o
                                     verão.
                                     Modelagem unissex.</p>
@@ -118,60 +118,74 @@
                                     Comprar
                                 </button>
                                 <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header" id="Title_modal_produto">
-                                            <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
-                                        <h5 class="modal-title" >Confira sobre o produto</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <!--Corpo do produto dentro do modal-->
-                                        <div class="modal-body" id="modal_pai">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <img src="/Meteora/img/card1.png" id="img_modal" class="card-img-top" alt="card1_camiseta">
-                                                </div>
-                                                <div class="col-md-6" id="caracteristica">
-                                                    <h4>Camiseta Conforto</h4>
-                                                    <br>
-                                                    <p>Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
-                                                    <p id="linha_modal"></p>
-                                                    <p id="preco_produto">R$ 79,00</p>
-                                                    <p id="fornecedor">Vendido e entregue por C&A</p>
-                                                    <p id="linha_modal"></p>
-                                                    <h4>Cores:</h4>
-                                                    <div id="cores_produto">
-                                                        <input type="radio" name="Camiseta_Conforto" value="Azul"/> Azul<br />
-                                                        <input type="radio" name="Camiseta_Conforto" value="Preta"/> Preta<br />
-                                                        <input type="radio" name="Camiseta_Conforto" value="OffWhite"/> OffWhite<br />
+                                        <div class="modal-content">
+                                            <div class="modal-header" id="Title_modal_produto">
+                                                <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
+                                                <h5 class="modal-title">Confira sobre o produto</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <!--Corpo do produto dentro do modal-->
+                                            <div class="modal-body" id="modal_pai">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="/Meteora/img/card1.png" id="img_modal"
+                                                            class="card-img-top" alt="card1_camiseta">
                                                     </div>
-                                                    <p id="linha_modal"></p>
-                                                    <h4>Tamanho:</h4>
-                                                    <div id="tamanho_produto">
-                                                        <input type="radio" name="Tamanho_camisata" value="P"/>P<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="PP"/>PP<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="M"/>M<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="G"/>G<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="GG"/>G<br />
+                                                    <div class="col-md-6" id="caracteristica">
+                                                        <h4>Camiseta Conforto</h4>
+                                                        <br>
+                                                        <p>Multicores e tamanhos. Tecido de algodão 100%, fresquinho
+                                                            para o verão. Modelagem unissex.</p>
+                                                        <p id="linha_modal"></p>
+                                                        <p id="preco_produto">R$ 79,00</p>
+                                                        <p id="fornecedor">Vendido e entregue por C&A</p>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Cores:</h4>
+                                                        <div id="cores_produto">
+                                                            <input type="radio" name="Camiseta_Conforto" value="Azul" />
+                                                            Azul<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="Preta" /> Preta<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="OffWhite" /> OffWhite<br />
+                                                        </div>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Tamanho:</h4>
+                                                        <div id="tamanho_produto">
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="P" />P<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="PP" />PP<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="M" />M<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="G" />G<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="GG" />G<br />
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Voltar</button>
+                                                <button key="0" type="button" class="btn btn-primary">Adicionar ao
+                                                    Carrinho</button>
+                                            </div>
                                         </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-                                        <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>
                                 <br><br>
-                                <a href="card1.js" class="btn btn-primary">Adicionar no carrinho</a>
+                                <a key="0" href="card1.js" class="btn btn-primary">Adicionar no carrinho</a>
                             </div>
                         </div>
                     </div>
                     <!--Produto 2 -->
-                    <div id="card__anuncio" class="col-md-4 mb-4">
+                    <div id="card__anuncio" class="col-md-4 mb-4" data-tipo="Calcas">
                         <div class="card" style="width: 18rem;" id="card2">
                             <img src="/Meteora/img/card2.png" class="card-img-top" alt="card2_calça">
                             <div class="card-body">
@@ -184,60 +198,74 @@
                                     Comprar
                                 </button>
                                 <!-- Modal -->
-                                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header" id="Title_modal_produto">
-                                            <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
-                                        <h5 class="modal-title" >Confira sobre o produto</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <!--Corpo do produto dentro do modal-->
-                                        <div class="modal-body" id="modal_pai">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <img src="/Meteora/img/card2.png" id="img_modal" class="card-img-top" alt="card1_camiseta">
-                                                </div>
-                                                <div class="col-md-6" id="caracteristica">
-                                                    <h4>Calça Alfaiataria</h4>
-                                                    <br>
-                                                    <p>Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
-                                                    <p id="linha_modal"></p>
-                                                    <p id="preco_produto">R$ 180,00</p>
-                                                    <p id="fornecedor">Vendido e entregue por C&A</p>
-                                                    <p id="linha_modal"></p>
-                                                    <h4>Cores:</h4>
-                                                    <div id="cores_produto">
-                                                        <input type="radio" name="Camiseta_Conforto" value="Azul"/> Azul<br />
-                                                        <input type="radio" name="Camiseta_Conforto" value="Preta"/> Preta<br />
-                                                        <input type="radio" name="Camiseta_Conforto" value="OffWhite"/> OffWhite<br />
+                                        <div class="modal-content">
+                                            <div class="modal-header" id="Title_modal_produto">
+                                                <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
+                                                <h5 class="modal-title">Confira sobre o produto</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <!--Corpo do produto dentro do modal-->
+                                            <div class="modal-body" id="modal_pai">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="/Meteora/img/card2.png" id="img_modal"
+                                                            class="card-img-top" alt="card1_camiseta">
                                                     </div>
-                                                    <p id="linha_modal"></p>
-                                                    <h4>Tamanho:</h4>
-                                                    <div id="tamanho_produto">
-                                                        <input type="radio" name="Tamanho_camisata" value="P"/>P<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="PP"/>PP<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="M"/>M<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="G"/>G<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="GG"/>G<br />
+                                                    <div class="col-md-6" id="caracteristica">
+                                                        <h4>Calça Alfaiataria</h4>
+                                                        <br>
+                                                        <p>Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!
+                                                        </p>
+                                                        <p id="linha_modal"></p>
+                                                        <p id="preco_produto">R$ 180,00</p>
+                                                        <p id="fornecedor">Vendido e entregue por C&A</p>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Cores:</h4>
+                                                        <div id="cores_produto">
+                                                            <input type="radio" name="Camiseta_Conforto" value="Azul" />
+                                                            Azul<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="Preta" /> Preta<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="OffWhite" /> OffWhite<br />
+                                                        </div>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Tamanho:</h4>
+                                                        <div id="tamanho_produto">
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="P" />P<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="PP" />PP<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="M" />M<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="G" />G<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="GG" />G<br />
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Voltar</button>
+                                                <button key="1" type="button" class="btn btn-primary">Adicionar ao
+                                                    Carrinho</button>
+                                            </div>
                                         </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-                                        <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>
                                 <br><br>
-                                <a href="card2.js" class="btn btn-primary">Adicionar no carrinho</a>
+                                <a key="1" href="card2.js" class="btn btn-primary">Adicionar no carrinho</a>
                             </div>
                         </div>
                     </div>
                     <!--Produto 3 -->
-                    <div id="card__anuncio" class="col-md-4 mb-4">
+                    <div id="card__anuncio" class="col-md-4 mb-4" data-tipo="Calcados">
                         <div class="card" style="width: 18rem;" id="card3">
                             <img src="/Meteora/img/card3.png" class="card-img-top" alt="card3_tênis">
                             <div class="card-body">
@@ -250,61 +278,75 @@
                                     Comprar
                                 </button>
                                 <!-- Modal -->
-                                <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header" id="Title_modal_produto">
-                                            <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
-                                        <h5 class="modal-title" >Confira sobre o produto</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <!--Corpo do produto dentro do modal-->
-                                        <div class="modal-body" id="modal_pai">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <img src="/Meteora/img/card3.png" id="img_modal" class="card-img-top" alt="card1_camiseta">
-                                                </div>
-                                                <div class="col-md-6" id="caracteristica">
-                                                    <h4>Tênis Chunky</h4>
-                                                    <br>
-                                                    <p>Snicker casual com solado mais alto e modelagem robusta. Modelo
-                                                        unissex.</p>
-                                                    <p id="linha_modal"></p>
-                                                    <p id="preco_produto">R$ 250,00</p>
-                                                    <p id="fornecedor">Vendido e entregue por C&A</p>
-                                                    <p id="linha_modal"></p>
-                                                    <h4>Cores:</h4>
-                                                    <div id="cores_produto">
-                                                        <input type="radio" name="Camiseta_Conforto" value="Azul"/> Azul<br />
-                                                        <input type="radio" name="Camiseta_Conforto" value="Preta"/> Preta<br />
-                                                        <input type="radio" name="Camiseta_Conforto" value="OffWhite"/> Laranja com branco<br />
+                                        <div class="modal-content">
+                                            <div class="modal-header" id="Title_modal_produto">
+                                                <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
+                                                <h5 class="modal-title">Confira sobre o produto</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <!--Corpo do produto dentro do modal-->
+                                            <div class="modal-body" id="modal_pai">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="/Meteora/img/card3.png" id="img_modal"
+                                                            class="card-img-top" alt="card1_camiseta">
                                                     </div>
-                                                    <p id="linha_modal"></p>
-                                                    <h4>Tamanho:</h4>
-                                                    <div id="tamanho_produto">
-                                                        <input type="radio" name="Tamanho_camisata" value="33-34"/>33-34<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="35-36"/>35-36<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="37-38"/>37-38<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="39-40"/>39-40<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="41-42"/>41-42<br />
+                                                    <div class="col-md-6" id="caracteristica">
+                                                        <h4>Tênis Chunky</h4>
+                                                        <br>
+                                                        <p>Snicker casual com solado mais alto e modelagem robusta.
+                                                            Modelo
+                                                            unissex.</p>
+                                                        <p id="linha_modal"></p>
+                                                        <p id="preco_produto">R$ 250,00</p>
+                                                        <p id="fornecedor">Vendido e entregue por C&A</p>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Cores:</h4>
+                                                        <div id="cores_produto">
+                                                            <input type="radio" name="Camiseta_Conforto" value="Azul" />
+                                                            Azul<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="Preta" /> Preta<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="OffWhite" /> Laranja com branco<br />
+                                                        </div>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Tamanho:</h4>
+                                                        <div id="tamanho_produto">
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="33-34" />33-34<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="35-36" />35-36<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="37-38" />37-38<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="39-40" />39-40<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="41-42" />41-42<br />
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Voltar</button>
+                                                <button key="2" type="button" class="btn btn-primary">Adicionar ao
+                                                    Carrinho</button>
+                                            </div>
                                         </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-                                        <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>
                                 <br><br>
-                                <a href="card3.js" class="btn btn-primary">Adicionar no carrinho</a>
+                                <a key="2" href="card3.js" class="btn btn-primary">Adicionar no carrinho</a>
                             </div>
                         </div>
                     </div>
                     <!--Produto 4 -->
-                    <div id="card__anuncio" class="col-md-4 mb-4">
+                    <div id="card__anuncio" class="col-md-4 mb-4" data-tipo="Bolsa">
                         <div class="card" style="width: 18rem;" id="card4">
                             <img src="/Meteora/img/card4.png" class="card-img-top" alt="card4_bolsa">
                             <div class="card-body">
@@ -317,59 +359,70 @@
                                     Comprar
                                 </button>
                                 <!-- Modal -->
-                                <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header" id="Title_modal_produto">
-                                            <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
-                                        <h5 class="modal-title" >Confira sobre o produto</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <!--Corpo do produto dentro do modal-->
-                                        <div class="modal-body" id="modal_pai">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <img src="/Meteora/img/card4.png" id="img_modal" class="card-img-top" alt="card1_camiseta">
-                                                </div>
-                                                <div class="col-md-6" id="caracteristica">
-                                                    <h4>Bolsa Coringa</h4>
-                                                    <br>
-                                                    <p>Bolsa Camel em couro sintético de alta duração. Ideal para
-                                                        acompanhar você por uma vida!</p>
-                                                    <p id="linha_modal"></p>
-                                                    <p id="preco_produto">R$ 150,00</p>
-                                                    <p id="fornecedor">Vendido e entregue por C&A</p>
-                                                    <p id="linha_modal"></p>
-                                                    <h4>Cores:</h4>
-                                                    <div id="cores_produto">
-                                                        <input type="radio" name="Camiseta_Conforto" value="Azul"/> Azul<br />
-                                                        <input type="radio" name="Camiseta_Conforto" value="Preta"/> Preta<br />
-                                                        <input type="radio" name="Camiseta_Conforto" value="OffWhite"/> Preta com prata<br />
+                                        <div class="modal-content">
+                                            <div class="modal-header" id="Title_modal_produto">
+                                                <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
+                                                <h5 class="modal-title">Confira sobre o produto</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <!--Corpo do produto dentro do modal-->
+                                            <div class="modal-body" id="modal_pai">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="/Meteora/img/card4.png" id="img_modal"
+                                                            class="card-img-top" alt="card1_camiseta">
                                                     </div>
-                                                    <p id="linha_modal"></p>
-                                                    <h4>Tamanho:</h4>
-                                                    <div id="tamanho_produto">
-                                                        <input type="radio" name="Tamanho_camisata" value="Pequena"/>Pequena<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="Media"/>Media<br />
-                                                        <input type="radio" name="Tamanho_camisata" value="Grande"/>Grande<br />
+                                                    <div class="col-md-6" id="caracteristica">
+                                                        <h4>Bolsa Coringa</h4>
+                                                        <br>
+                                                        <p>Bolsa Camel em couro sintético de alta duração. Ideal para
+                                                            acompanhar você por uma vida!</p>
+                                                        <p id="linha_modal"></p>
+                                                        <p id="preco_produto">R$ 150,00</p>
+                                                        <p id="fornecedor">Vendido e entregue por C&A</p>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Cores:</h4>
+                                                        <div id="cores_produto">
+                                                            <input type="radio" name="Camiseta_Conforto" value="Azul" />
+                                                            Azul<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="Preta" /> Preta<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="OffWhite" /> Preta com prata<br />
+                                                        </div>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Tamanho:</h4>
+                                                        <div id="tamanho_produto">
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="Pequena" />Pequena<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="Media" />Media<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="Grande" />Grande<br />
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Voltar</button>
+                                                <button key="3" type="button" class="btn btn-primary">Adicionar ao
+                                                    Carrinho</button>
+                                            </div>
                                         </div>
-                                        <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-                                        <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>
                                 <br><br>
-                                <a href="card4.js" class="btn btn-primary">Adicionar no carrinho</a>
+                                <a key="3" href="card4.js" class="btn btn-primary">Adicionar no carrinho</a>
                             </div>
                         </div>
                     </div>
                     <!--Produto 5 -->
-                    <div id="card__anuncio" class="col-md-4 mb-4">
+                    <div id="card__anuncio" class="col-md-4 mb-4" data-tipo="Acessorios">
                         <div class="card" style="width: 18rem;" id="card5">
                             <img src="/Meteora/img/card5.png" class="card-img-top" alt="card5_óculos">
                             <div class="card-body">
@@ -378,63 +431,75 @@
                                     erro!</p>
                                 <p>R$ 99,00</p>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#modal5">
-                                Comprar
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header" id="Title_modal_produto">
-                                        <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
-                                    <h5 class="modal-title" >Confira sobre o produto</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <!--Corpo do produto dentro do modal-->
-                                    <div class="modal-body" id="modal_pai">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <img src="/Meteora/img/card5.png" id="img_modal" class="card-img-top" alt="card1_camiseta">
+                                    data-bs-target="#modal5">
+                                    Comprar
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header" id="Title_modal_produto">
+                                                <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
+                                                <h5 class="modal-title">Confira sobre o produto</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
                                             </div>
-                                            <div class="col-md-6" id="caracteristica">
-                                                <h4>Óculos Redondo</h4>
-                                                <br>
-                                                <p>Armação metálica em grafite dourado com lentes arredondadas. Sem
-                                                    erro!</p>
-                                                <p id="linha_modal"></p>
-                                                <p id="preco_produto">R$ 99,00</p>
-                                                <p id="fornecedor">Vendido e entregue por C&A</p>
-                                                <p id="linha_modal"></p>
-                                                <h4>Cores:</h4>
-                                                <div id="cores_produto">
-                                                    <input type="radio" name="Camiseta_Conforto" value="Azul"/> Azul<br />
-                                                    <input type="radio" name="Camiseta_Conforto" value="Preta"/> Preta<br />
-                                                    <input type="radio" name="Camiseta_Conforto" value="OffWhite"/> Dourada<br />
+                                            <!--Corpo do produto dentro do modal-->
+                                            <div class="modal-body" id="modal_pai">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="/Meteora/img/card5.png" id="img_modal"
+                                                            class="card-img-top" alt="card1_camiseta">
+                                                    </div>
+                                                    <div class="col-md-6" id="caracteristica">
+                                                        <h4>Óculos Redondo</h4>
+                                                        <br>
+                                                        <p>Armação metálica em grafite dourado com lentes arredondadas.
+                                                            Sem
+                                                            erro!</p>
+                                                        <p id="linha_modal"></p>
+                                                        <p id="preco_produto">R$ 99,00</p>
+                                                        <p id="fornecedor">Vendido e entregue por C&A</p>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Cores:</h4>
+                                                        <div id="cores_produto">
+                                                            <input type="radio" name="Camiseta_Conforto" value="Azul" />
+                                                            Azul<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="Preta" /> Preta<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="OffWhite" /> Dourada<br />
+                                                        </div>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Armação:</h4>
+                                                        <div id="tamanho_produto">
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="Pequena" />Pequena<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="Media" />Media<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="Grande" />Grande<br />
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <p id="linha_modal"></p>
-                                                <h4>Armação:</h4>
-                                                <div id="tamanho_produto">
-                                                    <input type="radio" name="Tamanho_camisata" value="Pequena"/>Pequena<br />
-                                                    <input type="radio" name="Tamanho_camisata" value="Media"/>Media<br />
-                                                    <input type="radio" name="Tamanho_camisata" value="Grande"/>Grande<br />
-                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Voltar</button>
+                                                <button key="4" type="button" class="btn btn-primary">Adicionar ao
+                                                    Carrinho</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-                                    <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
-                                    </div>
                                 </div>
-                                </div>
-                            </div>
                                 <br><br>
                                 <a href="card5.js" class="btn btn-primary">Adicionar no carrinho</a>
                             </div>
                         </div>
                     </div>
                     <!--Produto 6 -->
-                    <div id="card__anuncio" class="col-md-4 mb-4">
+                    <div id="card__anuncio" class="col-md-4 mb-4" data-tipo="Casacos">
                         <div class="card" style="width: 18rem;" id="card6">
                             <img src="/Meteora/img/card6.png" class="card-img-top" alt="card6_jaqueta">
                             <div class="card-body">
@@ -443,60 +508,74 @@
                                     marinho claro e autêntica!</p>
                                 <p>R$ 120,00</p>
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#modal6">
-                                Comprar
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header" id="Title_modal_produto">
-                                        <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
-                                    <h5 class="modal-title" >Confira sobre o produto</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <!--Corpo do produto dentro do modal-->
-                                    <div class="modal-body" id="modal_pai">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <img src="/Meteora/img/card6.png" id="img_modal" class="card-img-top" alt="card1_camiseta">
+                                    data-bs-target="#modal6">
+                                    Comprar
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header" id="Title_modal_produto">
+                                                <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
+                                                <h5 class="modal-title">Confira sobre o produto</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
                                             </div>
-                                            <div class="col-md-6" id="caracteristica">
-                                                <h4>Jaqueta Jeans</h4>
-                                                <br>
-                                                <p>Modelo unissex oversized com gola de camurça. Atemporal de cor azul
-                                                    marinho claro e autêntica!</p>
-                                                <p id="linha_modal"></p>
-                                                <p id="preco_produto">R$ 120,00</p>
-                                                <p id="fornecedor">Vendido e entregue por C&A</p>
-                                                <p id="linha_modal"></p>
-                                                <h4>Cores:</h4>
-                                                <div id="cores_produto">
-                                                    <input type="radio" name="Camiseta_Conforto" value="Azul"/> Azul<br />
-                                                    <input type="radio" name="Camiseta_Conforto" value="Preta"/> Preta<br />
-                                                    <input type="radio" name="Camiseta_Conforto" value="OffWhite"/> Jeans Claro<br />
+                                            <!--Corpo do produto dentro do modal-->
+                                            <div class="modal-body" id="modal_pai">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <img src="/Meteora/img/card6.png" id="img_modal"
+                                                            class="card-img-top" alt="card1_camiseta">
+                                                    </div>
+                                                    <div class="col-md-6" id="caracteristica">
+                                                        <h4>Jaqueta Jeans</h4>
+                                                        <br>
+                                                        <p>Modelo unissex oversized com gola de camurça. Atemporal de
+                                                            cor azul
+                                                            marinho claro e autêntica!</p>
+                                                        <p id="linha_modal"></p>
+                                                        <p id="preco_produto">R$ 120,00</p>
+                                                        <p id="fornecedor">Vendido e entregue por C&A</p>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Cores:</h4>
+                                                        <div id="cores_produto">
+                                                            <input type="radio" name="Camiseta_Conforto" value="Azul" />
+                                                            Azul<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="Preta" /> Preta<br />
+                                                            <input type="radio" name="Camiseta_Conforto"
+                                                                value="OffWhite" /> Jeans Claro<br />
+                                                        </div>
+                                                        <p id="linha_modal"></p>
+                                                        <h4>Armação:</h4>
+                                                        <div id="tamanho_produto">
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="P" />P<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="PP" />PP<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="M" />M<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="G" />G<br />
+                                                            <input type="radio" name="Tamanho_camisata"
+                                                                value="GG" />G<br />
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <p id="linha_modal"></p>
-                                                <h4>Armação:</h4>
-                                                <div id="tamanho_produto">
-                                                    <input type="radio" name="Tamanho_camisata" value="P"/>P<br />
-                                                    <input type="radio" name="Tamanho_camisata" value="PP"/>PP<br />
-                                                    <input type="radio" name="Tamanho_camisata" value="M"/>M<br />
-                                                    <input type="radio" name="Tamanho_camisata" value="G"/>G<br />
-                                                    <input type="radio" name="Tamanho_camisata" value="GG"/>G<br />
-                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Voltar</button>
+                                                <button key="5" type="button" class="btn btn-primary">Adicionar ao
+                                                    Carrinho</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
-                                    <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
-                                    </div>
                                 </div>
-                                </div>
-                            </div>
                                 <br><br>
-                                <a href="card6.js" class="btn btn-primary">Adicionar no carrinho</a>
+                                <a key="5" href="card6.js" class="btn btn-primary">Adicionar no carrinho</a>
                             </div>
                         </div>
                     </div>
@@ -533,38 +612,38 @@
                 </div>
             </section>
         </div>
-            <!-- Modal contato -->
-            <div class="modal fade" id="btn_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <dialog class="modal-content">
-                        <header class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Meios de Contato</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </header>
-                        <main class="modal-body">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Digite seu nome
-                                    completo</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Caio Oliveira">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Digite seu e-mail</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="name@example.com">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Digite sua dúvida</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </main>
-                        <footer class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                            <button type="button" class="btn btn-primary">Enviar</button>
-                        </footer>
-                    </dialog>
-                </div>
+        <!-- Modal contato -->
+        <div class="modal fade" id="btn_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <dialog class="modal-content">
+                    <header class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Meios de Contato</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </header>
+                    <main class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Digite seu nome
+                                completo</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Caio Oliveira">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Digite seu e-mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Digite sua dúvida</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </main>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </footer>
+                </dialog>
             </div>
+        </div>
 
     </main>
 
@@ -579,6 +658,42 @@
                     <button id="btn_email_mkt">Enviar</button>
                 </div>
             </fieldset>
+        </div>
+
+        <!-- Modal e-mail verificado -->
+        <div class="modal" id="modalSucesso" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" id="Title_modal_produto">
+                        <img id="img_modal_check" src="/Meteora/img/check-circle.png" alt="">
+                        <h5 class="modal-title">E-mail cadastrado com sucesso!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Seu e-mail foi cadastrado com sucesso. Obrigado!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modalFalse" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" id="Title_modal_produto">
+                        <img id="img_modal_check" alt="">
+                        <h5 class="modal-title">E-mail não identificado</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Por favor, insira um e-mail válido</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
